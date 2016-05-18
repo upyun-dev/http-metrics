@@ -1,3 +1,7 @@
+0.1.2 / 2016-05-18
+
+  * add result upload length
+
 0.1.1 / 2016-04-29
 
   * fix TTFB acquisition mode
