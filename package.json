@@ -1,6 +1,6 @@
 {
-  "name": "http-metrics",
-  "version": "0.1.2",
+  "name": "hmetrics",
+  "version": "0.1.3",
   "description": "The metrics of the HTTP/HTTPS request process",
   "main": "index.js",
   "scripts": {
@@ -15,7 +15,7 @@
     },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zyvas/http-metrics.git"
+    "url": "https://github.com/upyun-dev/http-metrics.git"
   },
   "keywords": [
     "namelookup",
@@ -30,7 +30,7 @@
     "time_total"
   ],
   "bugs": {
-    "url": "https://github.com/zyvas/http-metrics/issues"
+    "url": "https://github.com/upyun-dev/http-metrics/issues"
   },
   "dependencies": {
   },
