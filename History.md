@@ -1,3 +1,12 @@
+0.1.5 / 2016-05-24
+
+  * update README.md
+  * add result res.statusCode
+
+0.1.4 / 2016-05-19
+
+  * fix result upload to size_download
+
 0.1.3 / 2016-05-19
 
   * rename result upload to size_download

@@ -14,6 +14,8 @@ The variables available are:
 * `time_connect` The time, in seconds, it took from the start until the TCP connect to the remote host (or proxy) was completed.
 * `time_starttransfer` The time, in seconds, it took from the start until the first byte was just about to be transferred. This includes time_pretransfer and also the time the server needed to calculate the result.
 * `time_total` The total time, in seconds, that the full operation lasted. The time will be displayed with millisecond resolution.
+* `size_download` Number of bytes downloaded.
+* `status_code` HTTP response status code.
 
 ## Installation
 
@@ -44,7 +46,9 @@ q.request({
  *   time_total: 0.036,
  *   time_appconnect: 0,
  *   time_connect: 0.018,
- *   time_starttransfer: 0.032 }
+ *   time_starttransfer: 0.032,
+ *   size_download: 298816,
+ *   status_code: 200 }
  */
 
 // https request
@@ -58,6 +62,8 @@ q.request('https://www.baidu.com', function(err, data) {
  *   time_starttransfer: 0.065,
  *   time_total: 0.067,
  *   time_appconnect: 0.053,
- *   time_connect: 0.032 }
+ *   time_connect: 0.032,
+ *   size_download: 298816,
+ *   status_code: 200 }
  */
 ```
