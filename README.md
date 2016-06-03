@@ -31,7 +31,7 @@ example:
 
 ```javascript
 // http request
-var q = require('http-metrics');
+var q = require('hmetrics');
 q.request({
   hostname: 'www.sina.com.cn',
   port: 80,
@@ -52,7 +52,7 @@ q.request({
  */
 
 // https request
-var q = require('http-metrics');
+var q = require('hmetrics');
 q.request('https://www.baidu.com', function(err, data) {
   if (err) return console.log(err);
   console.log(data);
