@@ -11,8 +11,8 @@
   "author": "taevas <taevas@qq.com> (taevas.space)",
   "license": "MIT",
   "engines": {
-      "node": ">=4.1.0"
-    },
+    "node": ">=4.1.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/upyun-dev/http-metrics.git"
@@ -32,15 +32,14 @@
   "bugs": {
     "url": "https://github.com/upyun-dev/http-metrics/issues"
   },
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jscs": "^3.0.2",
-    "gulp-jshint": "^2.0.0",
+    "gulp-jshint": "^2.0.1",
     "istanbul": "^0.4.3",
-    "jshint": "^2.9.1",
-    "mocha": "^2.4.5",
-    "should": "^8.3.1"
+    "jshint": "^2.9.2",
+    "mocha": "^2.5.3",
+    "should": "^9.0.0"
   }
 }
