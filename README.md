@@ -1,9 +1,9 @@
 # http-metrics
 
-[![Build Status](https://travis-ci.org/zyvas/http-metrics.svg?branch=develop)](https://travis-ci.org/zyvas/http-metrics)
-[![Dependency Status](https://david-dm.org/zyvas/http-metrics.svg)](https://david-dm.org/zyvas/http-metrics)
-[![devDependency Status](https://david-dm.org/zyvas/http-metrics/dev-status.svg)](https://david-dm.org/zyvas/http-metrics#info=devDependencies)
-[![Codacy Badge](https://api.codacy.com/project/badge/grade/fc56dc3fcd894e34bdf8c149fefea2c1)](https://www.codacy.com/app/i_4/http-metrics)
+[![Build Status](https://travis-ci.org/upyun-dev/http-metrics.svg)](https://travis-ci.org/upyun-dev/http-metrics.svg)
+[![Dependency Status](https://david-dm.org/upyun-dev/http-metrics.svg)](https://david-dm.org/upyun-dev/http-metrics)
+[![devDependency Status](https://david-dm.org/upyun-dev/http-metrics/dev-status.svg)](https://david-dm.org/upyun-dev/http-metrics#info=devDependencies)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc2214862f0c4939ba5f4adef8c75037)](https://www.codacy.com/app/shanderlam/http-metrics)
 
 Make HTTP/HTTPS display information on callback after a completed transfer.
 
