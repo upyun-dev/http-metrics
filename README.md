@@ -19,7 +19,7 @@ The variables available are:
 
 ## Installation
 
-> $ npm install http-metrics
+> $ npm install hmetrics
 
 ## Usage
 
