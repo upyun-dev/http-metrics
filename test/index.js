@@ -39,7 +39,7 @@ describe('index.js', function() {
 
     it('should return result when having a HTTPS request and host is IP without certificates', function(done) {
       this.timeout(10000);
-      request('https://192.30.252.120', function(err) {
+      request('https://115.239.210.27', function(err) {
         should.exist(err);
         return done();
       });
