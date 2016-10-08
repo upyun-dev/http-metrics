@@ -59,9 +59,39 @@ describe('index.js', function() {
       });
     });
 
-    it('should return error when unable to determine the domain name', function() {
+    it('should return error when unable to determine the domain name', function(done) {
+      this.timeout(10000);
       request('www.baidu.com', function(err) {
         should.exist(err);
+        return done();
+      });
+    });
+
+    it('should return error when request connect timeout', function(done) {
+      this.timeout(10000);
+      request({
+        hostname: 'www.sina.com.cn',
+        port: 80,
+        'path': '/',
+        method: 'GET',
+        connectTimeout: 0.0001
+      }, function(err, data) {
+        should.exist(err);
+        return done();
+      });
+    });
+
+    it('should return error when request connect timeout', function(done) {
+      this.timeout(10000);
+      request({
+        hostname: 'www.sina.com.cn',
+        port: 80,
+        'path': '/',
+        method: 'GET',
+        timeout: 0.0001
+      }, function(err, data) {
+        should.exist(err);
+        return done();
       });
     });
   });
