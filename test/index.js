@@ -74,7 +74,7 @@ describe('index.js', function() {
         port: 80,
         'path': '/',
         method: 'GET',
-        connectTimeout: 0.0001
+        connect_timeout: 0.0001
       }, function(err, data) {
         should.exist(err);
         return done();
