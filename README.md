@@ -39,6 +39,7 @@ example:
 
 ```javascript
 // http request
+var q = require('hmetrics');
 q.request({
   hostname: 'www.sina.com.cn',
   port: 80,
@@ -78,7 +79,6 @@ q.request('https://www.baidu.com', function(err, data) {
 
 // http request timeout
 var q = require('hmetrics');
-var q = require('./index');
 
 q.request({
   hostname: 'www.sina.com.cn',
