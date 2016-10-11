@@ -1,3 +1,14 @@
+0.1.7 / 2016-10-11
+=================
+
+  * 添加 coveralls 配置
+  * remove response event: "error"
+  * update devDependencies
+  * 修改 coveralls badges
+  * feat(timeout): 添加超时设置，整体时间和连接时间
+  * feat(package.json): update dependencies
+  * docs(README.md): 补充 README.md 内容
+
 0.1.6 / 2016-06-07
 =================
 

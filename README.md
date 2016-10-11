@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/upyun-dev/http-metrics.svg)](https://travis-ci.org/upyun-dev/http-metrics.svg)
 [![Dependency Status](https://david-dm.org/upyun-dev/http-metrics.svg)](https://david-dm.org/upyun-dev/http-metrics)
+[![Coverage Status](https://coveralls.io/repos/github/upyun-dev/http-metrics/badge.svg?branch=develop)](https://coveralls.io/github/upyun-dev/http-metrics?branch=develop)
 [![devDependency Status](https://david-dm.org/upyun-dev/http-metrics/dev-status.svg)](https://david-dm.org/upyun-dev/http-metrics#info=devDependencies)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc2214862f0c4939ba5f4adef8c75037)](https://www.codacy.com/app/shanderlam/http-metrics)
 
@@ -27,6 +28,13 @@ The variables available are:
 
 `options` can be an object or a string. All options from [http](https://nodejs.org/dist/latest-v5.x/docs/api/http.html#http_http_request_options_callback)/[https](https://nodejs.org/dist/latest-v5.x/docs/api/https.html#https_https_request_options_callback) are valid.
 
+extra-options:
+
+- timeout
+  set maximum time the request is allowed to take
+- connect_timeout
+  timeout for the connect phase
+
 example:
 
 ```javascript
@@ -36,7 +44,9 @@ q.request({
   hostname: 'www.sina.com.cn',
   port: 80,
   path: '/',
-  method: 'GET'
+  method: 'GET',
+  timeout: 10,
+  connect_timeout: 5
 }, function(err, data) {
   if (err) return console.log(err);
   console.log(data);
@@ -65,5 +75,23 @@ q.request('https://www.baidu.com', function(err, data) {
  *   time_connect: 0.032,
  *   size_download: 298816,
  *   status_code: 200 }
+ */
+
+// http request timeout
+var q = require('hmetrics');
+
+q.request({
+  hostname: 'www.sina.com.cn',
+  port: 80,
+  path: '/',
+  method: 'GET',
+  timeout: 10,
+  connect_timeout: 0.0001
+}, function(err, data) {
+  if (err) return console.log(err);
+  console.log(data);
+});
+/**
+ * [Error: request timeout]
  */
 ```
