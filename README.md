@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/upyun-dev/http-metrics.svg)](https://travis-ci.org/upyun-dev/http-metrics.svg)
 [![Dependency Status](https://david-dm.org/upyun-dev/http-metrics.svg)](https://david-dm.org/upyun-dev/http-metrics)
-[![Coverage Status](https://coveralls.io/repos/github/upyun-dev/http-metrics/badge.svg?branch=develop)](https://coveralls.io/github/upyun-dev/http-metrics?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/upyun-dev/http-metrics/badge.svg?branch=master)](https://coveralls.io/github/upyun-dev/http-metrics?branch=master)
 [![devDependency Status](https://david-dm.org/upyun-dev/http-metrics/dev-status.svg)](https://david-dm.org/upyun-dev/http-metrics#info=devDependencies)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/cc2214862f0c4939ba5f4adef8c75037)](https://www.codacy.com/app/shanderlam/http-metrics)
 
