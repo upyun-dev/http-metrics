@@ -1,6 +1,6 @@
 {
   "name": "hmetrics",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "The metrics of the HTTP/HTTPS request process",
   "main": "index.js",
   "scripts": {
