@@ -1,5 +1,6 @@
 # http-metrics
 
+[![npm](https://img.shields.io/npm/v/hmetrics.svg)](https://www.npmjs.com/package/hmetrics)
 [![Build Status](https://travis-ci.org/upyun-dev/http-metrics.svg)](https://travis-ci.org/upyun-dev/http-metrics.svg)
 [![Dependency Status](https://david-dm.org/upyun-dev/http-metrics.svg)](https://david-dm.org/upyun-dev/http-metrics)
 [![Coverage Status](https://coveralls.io/repos/github/upyun-dev/http-metrics/badge.svg?branch=master)](https://coveralls.io/github/upyun-dev/http-metrics?branch=master)

@@ -1,4 +1,5 @@
 'use strict';
+const nock = require('nock');
 const request = require('../index').request;
 const should = require('should');
 
@@ -92,6 +93,28 @@ describe('index.js', function() {
       }, function(err, data) {
         should.exist(err);
         return done();
+      });
+    });
+    context('when socket is delayed', function() {
+      before(function() {
+        nock('http://my.server.com:8081')
+          .get('/')
+          .socketDelay(1000)
+          .times(1)
+          .reply(200, '<html></html>');
+      });
+      it('should return error', function(done) {
+        this.timeout(10000);
+        request({
+          hostname: 'my.server.com',
+          port: 8081,
+          'path': '/',
+          method: 'GET',
+          connect_timeout: 0.5
+        }, function(err, data) {
+          should.exist(err);
+          return done();
+        });
       });
     });
   });
