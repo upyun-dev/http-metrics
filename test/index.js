@@ -3,6 +3,7 @@ const nock = require('nock');
 const request = require('../index').request;
 const should = require('should');
 
+nock.restore();
 describe('index.js', function() {
   context('request', function() {
     it('should return result when having a HTTP request', function(done) {
